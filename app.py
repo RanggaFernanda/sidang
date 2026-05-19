@@ -57,8 +57,9 @@ st.markdown(
 
 # ============== LOAD MODEL ==============
 model = tf.keras.models.load_model(
-    "sentiment_analysis_model.h5",
-    compile=False
+    "model.h5",
+    compile=False,
+    custom_objects=None
 )
 
 
